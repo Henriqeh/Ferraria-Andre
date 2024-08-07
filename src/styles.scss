@@ -1,1 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+//Importando fontes
+
+@font-face {
+  font-family: optprinceps;
+  src: url('/assets/fonts/OptimusPrinceps.ttf');
+}
+
+header{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+input {
+  background-image:url('/assets/img/MENU_PC_TextInput.png') ;
+  background-color: transparent;  
+  background-position: 50% 45%;
+  border: 0px;
+  padding: 10px 20px;
+  background-size: cover;
+  margin-left: 10px;
+  width: 300px;
+  height: 20px;
+  color: white;
+  font-family: optprinceps;
+  font-size: 17 px;
+  &:focus{
+    outline:0 ;
+  }
+}
+
+body {
+  background-color:#111111;
+  color: #d1d1d1; // Cor do texto para contraste, ajuste conforme necessário
+  padding: 20px;
+  border-radius: 8px; 
+  font-family: optprinceps; color: #bd9955;
+  
+}
+
+
+button {
+  background-color: transparent;
+  background-image: url('/assets/img/MENU_IconHelp.PNG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 0;
+  margin-left: 40px;
+  padding: 15px 40px;
+  width: 156px;
+  font-size: 16px; color:#d1d1d1;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  font-family:optprinceps;
+  &:hover{
+    transform: scale(1.2);
+    color: sandybrown;
+    font-family:optprinceps;
+  }
+  &:active{
+    transform: scale(0.9);
+  }
+}
+ .grid-item {
+  background-image:url("/assets/img/MENU_Dish.PNG");
+  background-position: center 40%;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  
+ }

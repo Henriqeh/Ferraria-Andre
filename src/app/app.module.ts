@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { CatalogoComponent } from './pages/catalogo/catalogo.component';
 import { SobreNosComponent } from './pages/sobre-nos/sobre-nos.component';
 import { ContatoComponent } from './pages/contato/contato.component';
+import { LoginComponent } from './login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     CatalogoComponent,
     SobreNosComponent,
-    ContatoComponent
+    ContatoComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

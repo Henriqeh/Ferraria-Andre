@@ -1,0 +1,47 @@
+// Variáveis para cores e fontes (você pode ajustar conforme necessário)
+
+
+// Estilos gerais para a seção de login
+.login-container {
+  max-width: 570px;
+  margin: 0 auto;
+  background-image: url("/assets/img/MENU_BloodMessageList.png");
+  padding: 30px;
+}
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .login-form {
+    .form-group {
+      margin-bottom: 15px;
+      
+      label {
+        display: block;
+        font-size: 1rem;
+        margin-bottom: 5px;
+      }
+      
+      input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+        box-sizing: border-box;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+    .login-button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: b
+    }

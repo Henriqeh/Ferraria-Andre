@@ -2,19 +2,31 @@
 
 @font-face {
   font-family: optprinceps;
-  src: url('/assets/fonts/OptimusPrinceps.ttf');
+  src: url("/assets/fonts/OptimusPrinceps.ttf");
+}
+html {
+  width: 100vw;
+  height: 100%;
+}
+body {
+  font-family: optprinceps;
+  color: #bd9955;
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
-header{
-  width:100%;
+header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-
 input {
-  background-image:url('/assets/img/MENU_PC_TextInput.png') ;
-  background-color: transparent;  
+  background-image: url("/assets/img/MENU_PC_TextInput.png");
+  background-color: transparent;
   background-position: 50% 45%;
   border: 0px;
   padding: 10px 20px;
@@ -25,48 +37,38 @@ input {
   color: white;
   font-family: optprinceps;
   font-size: 17 px;
-  &:focus{
-    outline:0 ;
+  &:focus {
+    outline: 0;
   }
 }
 
-body {
-  background-color:#111111;
-  color: #d1d1d1; // Cor do texto para contraste, ajuste conforme necessário
-  padding: 20px;
-  border-radius: 8px; 
-  font-family: optprinceps; color: #bd9955;
-  
-}
-
-
 button {
   background-color: transparent;
-  background-image: url('/assets/img/MENU_IconHelp.PNG');
+  background-image: url("/assets/img/MENU_IconHelp.PNG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border: 0;
-  margin-left: 40px;
+
   padding: 15px 40px;
   width: 156px;
-  font-size: 16px; color:#d1d1d1;
+  font-size: 16px;
+  color: #d1d1d1;
   cursor: pointer;
   transition: opacity 0.3s;
-  font-family:optprinceps;
-  &:hover{
+  font-family: optprinceps;
+  &:hover {
     transform: scale(1.2);
     color: sandybrown;
-    font-family:optprinceps;
+    font-family: optprinceps;
   }
-  &:active{
+  &:active {
     transform: scale(0.9);
   }
 }
- .grid-item {
-  background-image:url("/assets/img/MENU_Dish.PNG");
+.grid-item {
+  background-image: url("/assets/img/MENU_Dish.PNG");
   background-position: center 40%;
   background-repeat: no-repeat;
   background-size: 20%;
-  
- }
+}

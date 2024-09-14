@@ -1,11 +1,13 @@
-.catalogo{
-    background-color: transparent
+.container {
+ padding: 20px;
+ border-radius: 8px;
 }
 
+
+
 .Espadas{
-    width: 100%;
+    width:calc(100% - 20px);
     height: fit-content;
-    //border:5px #9f79e6 solid;
     padding: 10px;
     box-sizing: border-box;
     
@@ -16,7 +18,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
-    width: 100%;
+    width: calc(100% - 20px);
     align-items: center;
 }
 
@@ -27,11 +29,19 @@
 }
 
 .grid-item img {
-    height: 50%; /* A altura será ajustada automaticamente para manter a proporção */
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da célula */
-    max-height: 100%; /* Garante que a imagem não ultrapasse a altura da célula */
+    height: 50%;
+    max-width: 100%; 
+    max-height: 100%;
 }
 
 .grid-item:hover {
     transform: translateY(-5px);
+}
+
+button{
+    margin-left: 40px;
+}
+.login-button{
+   margin-right: 70px;
+   margin-top: 1px;
 }

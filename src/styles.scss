@@ -7,6 +7,8 @@
 html {
   width: 100vw;
   height: 100%;
+  padding: 0;
+  margin: 0;
 }
 body {
   font-family: optprinceps;
@@ -59,7 +61,7 @@ button {
   font-family: optprinceps;
   &:hover {
     transform: scale(1.2);
-    color: sandybrown;
+    color: #bd9955;
     font-family: optprinceps;
   }
   &:active {

@@ -10,6 +10,8 @@ import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
+import { CadUsuarioComponent } from './cad-usuario/cad-usuario.component';
+import { CadProdutoComponent } from './cad-produto/cad-produto.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { MenuComponent } from './menu/menu.component';
     ContatoComponent,
     LoginComponent,
     HomeComponent,
-    MenuComponent
+    MenuComponent,
+    CadUsuarioComponent,
+    CadProdutoComponent
   ],
   imports: [
     BrowserModule,

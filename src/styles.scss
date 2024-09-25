@@ -18,6 +18,11 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  background-repeat: no-repeat;
+  background-image: url("/assets/img/7.png");
+  background-size: cover;
+  background-position: 0px -410px;
+  
 }
 
 header {
@@ -26,7 +31,7 @@ header {
   justify-content: space-between;
 }
 
-input {
+input:not([type=date]) {
   background-image: url("/assets/img/MENU_PC_TextInput.png");
   background-color: transparent;
   background-position: 50% 45%;
@@ -42,6 +47,46 @@ input {
   &:focus {
     outline: 0;
   }
+}
+
+input[type=date] {
+  background-image: url('/assets/img/4.png');
+  background-color: transparent;
+  background-position: 50% 45%;
+  border: 0px;
+  padding: 10px 20px;
+  background-size: cover;
+  margin-left: 10px;
+  width: 150px;
+  height: 20px;
+  color: white;
+  font-family: optprinceps;
+  font-size: 17 px;
+  &:focus {
+    outline: 0;
+  }
+}
+
+select {
+  background-image: url('/assets/img/4.png');
+  background-color: transparent;
+  background-position: 50% 45%;
+  border: 0px;
+  padding: 10px 20px;
+  background-size: cover;
+  margin-left: 10px;
+  width: 180px;
+  height: 50px;
+  color: white;
+  font-family: optprinceps;
+  font-size: 17 px;
+  &:focus {
+    outline: 0;
+}
+}
+option {
+  background-color: black;
+  
 }
 
 button {

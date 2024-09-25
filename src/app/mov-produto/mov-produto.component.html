@@ -1,0 +1,98 @@
+
+<app-menu></app-menu>
+<div class="container">
+    <div class="form-container">
+        <h2>Movimentacao de Produtos</h2>
+        <form>
+            <div class="info">
+                <div class="form-group">
+                    <label for="id">Id</label>
+                    <input type="number" id="id" name="id" required>
+                </div>
+                <div class="form-group">
+                    <label for="data">Data de Movimentacao</label>
+                    <input type="date" id="data" name="data" required>
+                </div>
+                <div class="form-group">
+                    <label for="produto">Produto</label>
+                    <select id="produto" name="produto" required>
+                        <option value="">Selecione</option>
+                        <option value="espada">Espada Reta</option>
+                        <option value="espada">Flamberge</option>
+                        <option value="espada">Katana</option>
+                        <option value="espada">Claymore</option>
+                        <option value="espada">Zweihander</option>
+                        <option value="espada">Grande Espada de Lothric</option>
+                        <option value="machado">Machado</option>
+                        <option value="machado">Machado de Batalha</option>
+                        <option value="machado">Machado Matador de Dragoes</option>
+                        <option value="machado">Machado Duplo dos Cavaleiros Alados</option>
+                        <option value="machado">Machado Grande</option>
+                        <option value="machado">Machado Grande Matador de Dragoes</option>
+                        <option value="escudo">Broquel</option>
+                        <option value="escudo">Escudo de Madeira</option>
+                        <option value="escudo">Escudo de Pipa</option>
+                        <option value="escudo">Escudo do Cavaleiro</option>
+                        <option value="escudo">Escudo da Árvore Espiritual</option>
+                        <option value="escudo">Escudo Grande de Ferro Negro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantidade">Quantidade</label>
+                    <input type="number" id="quantidade" name="quantidade" required>
+                </div>
+                <div class="form-group">
+                    <label for="tipo">Tipo</label>
+                    <select id="tipo" name="tipo" required>
+                        <option value="">Selecione</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" id="usuario" name="usuario" required>
+                </div>
+                <div class="enviar">
+                    <button type="submit">Enviar</button>
+                </div>
+            </div>
+            
+        </form>
+        
+</div>
+<div class="relatorio">
+    <h3 class="mt-5"> Relatorio dos Produtos</h3>
+<table class="table">
+<thead>
+<tr class="relatoriotext">
+  <th class="acao">Acao</th>
+  <th>ID</th>
+  <th>Data</th>
+  <th>Produto</th>
+  <th>Quantidade</th>
+  <th>Tipo</th>
+  <th>Usuario</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>
+    <button>Editar</button>
+    <button>Excluir</button>
+  </td>
+ 
+</tr>
+<tr>
+  <td>
+    <button>Editar</button>
+    <button>Excluir</button>
+  </td>
+  
+</tr>
+</tbody>
+</table>
+</div> 
+</div>
+
+
+
+

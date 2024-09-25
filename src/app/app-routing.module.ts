@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 import { CadUsuarioComponent } from './cad-usuario/cad-usuario.component';
 import { CadProdutoComponent } from './cad-produto/cad-produto.component';
+import { MovProdutoComponent } from './mov-produto/mov-produto.component';
 const routes: Routes = [
   {path:'',redirectTo:'catalogo',pathMatch:'full'},
   {path:'catalogo', component:CatalogoComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path:'menu', component: MenuComponent},
   {path:'cadUsuario', component: CadUsuarioComponent},
   {path:'cadProduto', component: CadProdutoComponent},
+  {path:'movProduto', component: MovProdutoComponent},
 ];
 
 @NgModule({

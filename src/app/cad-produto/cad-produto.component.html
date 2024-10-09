@@ -3,32 +3,33 @@
 <div class="container">
     <div class="form-container">
         <h2>Cadastro de Produtos</h2>
-        <form>
+        <form [formGroup]="formulario">
         <div class="info">
             <div class="form-group">
                 <label for="name">Nome</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" formControlName="nome" required>
             </div>
             <div class="form-group">
                 <label for="price">Preco</label>
-                <input type="text" id="price" name="price" required>
+                <input type="text" id="price" formControlName="preco" required>
             </div>
             <div class="form-group">
                 <label for="fabricant">Fabricante</label>
-                <input type="text" id="fabricant" name="fabricant" required>
+                <input type="text" id="fabricant" formControlName="fabricante" required>
             </div>
             <div class="form-group">
                 <label for="desc">Descricao</label>
-                <input type="text" id="desc" name="desc" required>
+                <input type="text" id="desc" formControlName="descricao" required>
             </div>
             <div class="form-group">
                 <label for="type">Tipo</label>
-                <select id="type" name="type" required>
+                <select id="type" formControlName="tipo" required>
                   <option value="">Selecione</option>
                   </select>
             </div>
             <div class="enviar">
-                <button type="submit">Enviar</button>
+              <button (click)="OnSave()">Enviar</button>
+              <button (click)="OnCancelar()">Cancelar</button>
             </div>
         </div>
         </form>

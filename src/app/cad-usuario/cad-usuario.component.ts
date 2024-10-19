@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { UsuarioService } from '../usuario.service';
+import { TipoService } from '../services/tipo.service';
 
 @Component({
   selector: 'app-cad-usuario',
@@ -17,7 +18,11 @@ export class CadUsuarioComponent {
    endereco : new FormControl(''),
    datanasci: new FormControl(''),
   })
-  constructor(private usuarioService:UsuarioService){
+  constructor(
+    private usuarioService:UsuarioService,
+    private tipoService:TipoService
+  ){
+    this.buscaTipos()
   }
   
   OnSave(){
@@ -34,6 +39,20 @@ export class CadUsuarioComponent {
   }
   OnCancelar(){
     this.formulario.reset()
+  }
+
+  arrTipos:any[] = [];
+
+  buscaTipos(){
+    this.tipoService.getTipos().subscribe({
+      next:(res)=>{
+        this.arrTipos = res.body;
+        console.log(this.arrTipos)
+      },
+      error:(erro)=>{
+        console.log(erro);
+      }
+    })
   }
   }
   
